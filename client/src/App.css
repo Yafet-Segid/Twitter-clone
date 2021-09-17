@@ -1,0 +1,29 @@
+.header {
+  /* margin-left: 570px; */
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: flex;
+
+}
+.home{
+  margin-left: 540px;
+
+}
+
+.search {
+  display: inline;
+  /* margin: 20px; */
+  font-size: 30px;
+  padding-left:30px;
+  text-decoration: none;  
+  
+}
+.search:hover {
+}
+
+.logo{
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+  
+}

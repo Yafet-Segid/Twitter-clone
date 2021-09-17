@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.search-tweet {
+  border: 1px solid #1da1f2;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 7px;
+  padding-left: 20px;
+  margin-left: 350px;
+  margin-top: 30px;
+  /* outline: none; */
+  color: black;
+}

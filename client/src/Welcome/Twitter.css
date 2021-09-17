@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #e4e4e4;
+  overflow: hidden;
+}
+
+.big_bird {
+  width: 35em;
+  height: 35em;
+  margin-left: 100px;
+  margin-top: 200px;
+  float: right;
+  
+}
+
+.Header_text {
+  margin-left: 70px;
+  margin-top: 150px;
+  color: black;
+  font-size: 50px;
+}

@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+}
+img {
+  display: flex;
+}
+.topList {
+  background-color: rgb(255, 254, 254);
+  display: flex;
+  margin-top: 40px;
+  margin-left: 4%;
+}
+
+.topList img:hover {
+  box-shadow: 0 0 10px#1DA1F2;
+}
