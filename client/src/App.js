@@ -10,9 +10,9 @@ function App() {
   return (
     <Router>
       <div className="header">
-        <Link>
+        {/* <Link>
           <img to="/" className="logo" src={"./image/twitter-icon.png"} />
-        </Link>
+        </Link> */}
         <Link to="/" className="search home">
           Home
         </Link>

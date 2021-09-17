@@ -158,7 +158,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TopPick_TopPick__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./TopPick/TopPick */ "./src/TopPick/TopPick.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/yafetsegid/Desktop/twitter/client/src/App.js";
+var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/App.js";
 
 
 
@@ -172,20 +172,6 @@ function App() {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])("div", {
       className: "header",
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])("img", {
-          to: "/",
-          className: "logo",
-          src: "./image/twitter-icon.png"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 14,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 13,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/",
         className: "search home",
         children: "Home"
@@ -302,7 +288,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/yafetsegid/Desktop/twitter/client/src/HomePage/HomePage.js";
+var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/HomePage/HomePage.js";
 
 
 
@@ -399,7 +385,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TopPick_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_TopPick_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/yafetsegid/Desktop/twitter/client/src/TopPick/TopPick.js";
+var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/TopPick/TopPick.js";
 
  // import nba from "../nba.png";
 
@@ -494,7 +480,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Twitter_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Twitter_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/yafetsegid/Desktop/twitter/client/src/Welcome/Welcome.js";
+var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/Welcome/Welcome.js";
 
 
 
@@ -594,7 +580,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reportWebVitals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./reportWebVitals */ "./src/reportWebVitals.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "/Users/yafetsegid/Desktop/twitter/client/src/index.js";
+var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/index.js";
 
 
 
@@ -657,8 +643,8 @@ const reportWebVitals = onPerfEntry => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/yafetsegid/Desktop/twitter/client/node_modules/react-dev-utils/webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
-module.exports = __webpack_require__(/*! /Users/yafetsegid/Desktop/twitter/client/src/index.js */"./src/index.js");
+__webpack_require__(/*! /Users/yafetsegid/Desktop/Twitter_2/client/node_modules/react-dev-utils/webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! /Users/yafetsegid/Desktop/Twitter_2/client/src/index.js */"./src/index.js");
 
 
 /***/ })
