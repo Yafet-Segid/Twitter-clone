@@ -14,7 +14,7 @@ app.get("/api/tweets", (req, res) => {
   axios
     .get("https://api.twitter.com/1.1/search/tweets.json?q=elonmask", {
       headers: {
-        Authentication: ` Bearer ${token}`,
+        Authorization: ` Bearer ${token}`,
       },
     })
     .then((response) => {

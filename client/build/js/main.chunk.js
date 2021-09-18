@@ -297,21 +297,26 @@ var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/HomePage/Home
 
 
 const HomePage = () => {
+  state = {
+    persons: []
+  };
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     getTweets();
   }, []);
 
   function getTweets() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/api/tweets").then(response => {
-      console.log(response);
+      const persons = response.data;
+      this.setState({
+        persons
+      });
     }).catch(error => {
       console.log(error);
     });
-  } //
-
+  }
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["Fragment"], {
-    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
       className: "listBox",
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("span", {
         className: "search_box",
@@ -321,20 +326,38 @@ const HomePage = () => {
           placeholder: "Search Twitter..."
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 26,
+          lineNumber: 30,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 29,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 28,
       columnNumber: 7
-    }, undefined)
-  }, void 0, false);
+    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
+        children: undefined.state.persons.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+          children: [" ", person.statuses.text]
+        }, person.id, true, {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 13
+        }, undefined))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 9
+      }, undefined)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 7
+    }, undefined)]
+  }, void 0, true);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);

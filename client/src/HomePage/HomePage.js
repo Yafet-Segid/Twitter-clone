@@ -1,9 +1,13 @@
 import React from "react";
 import "./HomePage.css";
 import axios from "axios";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const HomePage = () => {
+  state = {
+    persons: [],
+  };
+
   useEffect(() => {
     getTweets();
   }, []);
@@ -12,13 +16,13 @@ const HomePage = () => {
     axios
       .get("/api/tweets")
       .then((response) => {
-        console.log(response);
+        const persons = response.data;
+        this.setState({ persons });
       })
       .catch((error) => {
         console.log(error);
       });
   }
-  //
   return (
     <>
       <div className="listBox">
@@ -29,6 +33,13 @@ const HomePage = () => {
             placeholder="Search Twitter..."
           />
         </span>
+      </div>
+      <div>
+        <ul>
+          {this.state.persons.map((person) => (
+            <li key={person.id}> {person.statuses.text}</li>
+          ))}
+        </ul>
       </div>
     </>
   );

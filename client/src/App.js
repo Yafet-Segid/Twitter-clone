@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="header">
-        {/* <Link>
+        {/* <Link>http://localhost:300
           <img to="/" className="logo" src={"./image/twitter-icon.png"} />
         </Link> */}
         <Link to="/" className="search home">
