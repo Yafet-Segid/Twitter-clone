@@ -28,7 +28,7 @@ app.get("/search", () => {
   axios
     .get("https://api.twitter.com/1.1/search/tweets.json", {
       headers: {
-        Authorization: ` Bearer ${token}`,
+        Authorization: ` Bearer ${q}`,
       },
     })
     .then((response) => {
