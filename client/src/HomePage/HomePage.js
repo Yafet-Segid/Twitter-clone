@@ -4,30 +4,42 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 const HomePage = () => {
-  state = {
-    persons: [],
-  };
+  const [data, setData] = useState([]);
+  const [searchValue, setSearchValue] = useState(null);
 
   useEffect(() => {
     getTweets();
+    handleInput();
   }, []);
 
   function getTweets() {
     axios
-      .get("/api/tweets")
+      .get(`/api/tweets`)
       .then((response) => {
-        const persons = response.data;
-        this.setState({ persons });
+        setData(response.data.statuses);
       })
       .catch((error) => {
         console.log(error);
       });
+    // search
+    function handleInput() {
+      axios
+        .get(`/search`)
+        .then((response) => {
+          setData(response.data.statuses);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   }
+
   return (
     <>
       <div className="listBox">
-        <span className="search_box">
+        <span className="search_box0" onClick={handleInput}>
           <input
+            onChange={(event) => setSearchValue(event.target.value)}
             className="search-tweet"
             type="text"
             placeholder="Search Twitter..."
@@ -35,9 +47,11 @@ const HomePage = () => {
         </span>
       </div>
       <div>
-        <ul>
-          {this.state.persons.map((person) => (
-            <li key={person.id}> {person.statuses.text}</li>
+        <ul className="tweetFrame">
+          {data.map((person) => (
+            <li className="tweetBox" key={person.id}>
+              {person.text}
+            </li>
           ))}
         </ul>
       </div>

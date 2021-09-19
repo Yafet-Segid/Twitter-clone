@@ -37,7 +37,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n", "",{"version":3,"sources":["webpack://src/HomePage/HomePage.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,mBAAmB;EACnB,eAAe;EACf,YAAY;EACZ,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY;AACd","sourcesContent":["body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n.tweetFrame {\n  list-style-type: none;\n  margin-top: 50px;\n}\n\n.tweetBox {\n  margin-bottom: 20px;\n  border: 1px solid black;\n  margin-left: 300px;\n  margin-right: 300px;\n  border-radius: 30px;\n  padding: 15px;\n}\n", "",{"version":3,"sources":["webpack://src/HomePage/HomePage.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,mBAAmB;EACnB,eAAe;EACf,YAAY;EACZ,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY;AACd;AACA;EACE,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;EACvB,kBAAkB;EAClB,mBAAmB;EACnB,mBAAmB;EACnB,aAAa;AACf","sourcesContent":["body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n.tweetFrame {\n  list-style-type: none;\n  margin-top: 50px;\n}\n\n.tweetBox {\n  margin-bottom: 20px;\n  border: 1px solid black;\n  margin-left: 300px;\n  margin-right: 300px;\n  border-radius: 30px;\n  padding: 15px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -297,64 +297,73 @@ var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/HomePage/Home
 
 
 const HomePage = () => {
-  state = {
-    persons: []
-  };
+  const [data, setData] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  const [searchValue, setSearchValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     getTweets();
+    handleInput();
   }, []);
 
   function getTweets() {
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/api/tweets").then(response => {
-      const persons = response.data;
-      this.setState({
-        persons
-      });
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets`).then(response => {
+      setData(response.data.statuses);
     }).catch(error => {
       console.log(error);
-    });
+    }); // search
+
+    function handleInput() {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/search`).then(response => {
+        setData(response.data.statuses);
+      }).catch(error => {
+        console.log(error);
+      });
+    }
   }
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["Fragment"], {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
       className: "listBox",
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("span", {
-        className: "search_box",
+        className: "search_box0",
+        onClick: handleInput,
         children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("input", {
+          onChange: event => setSearchValue(event.target.value),
           className: "search-tweet",
           type: "text",
           placeholder: "Search Twitter..."
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 41,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 40,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 39,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
-        children: undefined.state.persons.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
-          children: [" ", person.statuses.text]
-        }, person.id, true, {
+        className: "tweetFrame",
+        children: data.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+          className: "tweetBox",
+          children: person.text
+        }, person.id, false, {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 52,
           columnNumber: 13
         }, undefined))
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 50,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 49,
       columnNumber: 7
     }, undefined)]
   }, void 0, true);
@@ -415,42 +424,56 @@ var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/TopPick/TopPi
 
 
 const TopPick = () => {
+  // const [image, setImage] = useImage([]);
+  // useEffect(() => {
+  //   getImage();
+  // }, []);
+  // function getImage() {
+  //   axios
+  //     .get("https://api.twitter.com/1.1/search/tweets.json?q=tesla")
+  //     .then((response) => {
+  //       setData(response.data.statuses);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
     className: "topList",
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
       src: "./image/nba.png"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 25,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
       src: "./image/nasa.png"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 26,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
       src: "./image/tesla.png"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 27,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
       src: "./image/mkbhd.png"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 28,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
       src: "./image/ryan.png"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 29,
       columnNumber: 7
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 24,
     columnNumber: 5
   }, undefined);
 };
