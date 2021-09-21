@@ -22,9 +22,9 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".header {\n  /* margin-left: 570px; */\
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/HomePage/HomePage.css":
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Favorite/Favorite.css":
 /*!**************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/HomePage/HomePage.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Favorite/Favorite.css ***!
   \**************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -37,17 +37,17 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n.tweetFrame {\n  list-style-type: none;\n  margin-top: 50px;\n}\n\n.tweetBox {\n  margin-bottom: 20px;\n  border: 1px solid black;\n  margin-left: 300px;\n  margin-right: 300px;\n  border-radius: 30px;\n  padding: 15px;\n}\n", "",{"version":3,"sources":["webpack://src/HomePage/HomePage.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,mBAAmB;EACnB,eAAe;EACf,YAAY;EACZ,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY;AACd;AACA;EACE,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;EACvB,kBAAkB;EAClB,mBAAmB;EACnB,mBAAmB;EACnB,aAAa;AACf","sourcesContent":["body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n.tweetFrame {\n  list-style-type: none;\n  margin-top: 50px;\n}\n\n.tweetBox {\n  margin-bottom: 20px;\n  border: 1px solid black;\n  margin-left: 300px;\n  margin-right: 300px;\n  border-radius: 30px;\n  padding: 15px;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: white;\n}\nimg {\n  display: flex;\n}\n.topList {\n  background-color: rgb(255, 254, 254);\n  display: flex;\n  margin-top: 40px;\n  margin-left: 4%;\n}\n\n.topList img:hover {\n  box-shadow: 0 0 10px#1DA1F2;\n}\n", "",{"version":3,"sources":["webpack://src/Favorite/Favorite.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;AACzB;AACA;EACE,aAAa;AACf;AACA;EACE,oCAAoC;EACpC,aAAa;EACb,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,2BAA2B;AAC7B","sourcesContent":["body {\n  background-color: white;\n}\nimg {\n  display: flex;\n}\n.topList {\n  background-color: rgb(255, 254, 254);\n  display: flex;\n  margin-top: 40px;\n  margin-left: 4%;\n}\n\n.topList img:hover {\n  box-shadow: 0 0 10px#1DA1F2;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/TopPick/TopPick.css":
-/*!************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/TopPick/TopPick.css ***!
-  \************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Search/Search.css":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Search/Search.css ***!
+  \**********************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -59,7 +59,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: white;\n}\nimg {\n  display: flex;\n}\n.topList {\n  background-color: rgb(255, 254, 254);\n  display: flex;\n  margin-top: 40px;\n  margin-left: 4%;\n}\n\n.topList img:hover {\n  box-shadow: 0 0 10px#1DA1F2;\n}\n", "",{"version":3,"sources":["webpack://src/TopPick/TopPick.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;AACzB;AACA;EACE,aAAa;AACf;AACA;EACE,oCAAoC;EACpC,aAAa;EACb,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,2BAA2B;AAC7B","sourcesContent":["body {\n  background-color: white;\n}\nimg {\n  display: flex;\n}\n.topList {\n  background-color: rgb(255, 254, 254);\n  display: flex;\n  margin-top: 40px;\n  margin-left: 4%;\n}\n\n.topList img:hover {\n  box-shadow: 0 0 10px#1DA1F2;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n.tweetFrame {\n  list-style-type: none;\n  margin-top: 50px;\n}\n\n.tweetBox {\n  margin-bottom: 20px;\n  border: 1px solid black;\n  margin-left: 300px;\n  margin-right: 300px;\n  border-radius: 30px;\n  padding: 15px;\n}\n", "",{"version":3,"sources":["webpack://src/Search/Search.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,mBAAmB;EACnB,eAAe;EACf,YAAY;EACZ,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY;AACd;AACA;EACE,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;EACvB,kBAAkB;EAClB,mBAAmB;EACnB,mBAAmB;EACnB,aAAa;AACf","sourcesContent":["body {\n  background-color: white;\n  box-sizing: border-box;\n}\n\n.search-tweet {\n  border: 1px solid #1da1f2;\n  border-radius: 20px;\n  font-size: 20px;\n  padding: 7px;\n  padding-left: 20px;\n  margin-left: 350px;\n  margin-top: 30px;\n  /* outline: none; */\n  color: black;\n}\n.tweetFrame {\n  list-style-type: none;\n  margin-top: 50px;\n}\n\n.tweetBox {\n  margin-bottom: 20px;\n  border: 1px solid black;\n  margin-left: 300px;\n  margin-right: 300px;\n  border-radius: 30px;\n  padding: 15px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -154,8 +154,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Welcome_Welcome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Welcome/Welcome */ "./src/Welcome/Welcome.js");
-/* harmony import */ var _HomePage_HomePage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HomePage/HomePage */ "./src/HomePage/HomePage.js");
-/* harmony import */ var _TopPick_TopPick__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./TopPick/TopPick */ "./src/TopPick/TopPick.js");
+/* harmony import */ var _Search_Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Search/Search */ "./src/Search/Search.js");
+/* harmony import */ var _Favorite_Favorite__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Favorite/Favorite */ "./src/Favorite/Favorite.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/App.js";
@@ -180,7 +180,7 @@ function App() {
         lineNumber: 16,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/HomePage",
+        to: "/Search",
         className: "search",
         children: "Search"
       }, void 0, false, {
@@ -188,7 +188,7 @@ function App() {
         lineNumber: 19,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/TopPick",
+        to: "/Favorite",
         className: "search",
         children: "Favorites"
       }, void 0, false, {
@@ -211,16 +211,16 @@ function App() {
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
-        path: "/HomePage",
-        component: _HomePage_HomePage__WEBPACK_IMPORTED_MODULE_4__["default"]
+        path: "/Search",
+        component: _Search_Search__WEBPACK_IMPORTED_MODULE_4__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 28,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
-        path: "/TopPick",
-        component: _TopPick_TopPick__WEBPACK_IMPORTED_MODULE_5__["default"]
+        path: "/Favorite",
+        component: _Favorite_Favorite__WEBPACK_IMPORTED_MODULE_5__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 29,
@@ -242,15 +242,15 @@ function App() {
 
 /***/ }),
 
-/***/ "./src/HomePage/HomePage.css":
+/***/ "./src/Favorite/Favorite.css":
 /*!***********************************!*\
-  !*** ./src/HomePage/HomePage.css ***!
+  !*** ./src/Favorite/Favorite.css ***!
   \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./HomePage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/HomePage/HomePage.css");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./Favorite.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Favorite/Favorite.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -271,9 +271,9 @@ module.exports = content.locals || {};
 
 /***/ }),
 
-/***/ "./src/HomePage/HomePage.js":
+/***/ "./src/Favorite/Favorite.js":
 /*!**********************************!*\
-  !*** ./src/HomePage/HomePage.js ***!
+  !*** ./src/Favorite/Favorite.js ***!
   \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -282,13 +282,13 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _HomePage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomePage.css */ "./src/HomePage/HomePage.css");
-/* harmony import */ var _HomePage_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_HomePage_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Favorite_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Favorite.css */ "./src/Favorite/Favorite.css");
+/* harmony import */ var _Favorite_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Favorite_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/HomePage/HomePage.js";
+var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/Favorite/Favorite.js";
 
 
 
@@ -296,41 +296,48 @@ var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/HomePage/Home
 
 
 
-const HomePage = () => {
-  const [data, setData] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-  const [searchValue, setSearchValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    getTweets();
-    handleInput();
-  }, []);
+const Favorite = () => {
+  const [list, setList] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
 
-  function getTweets() {
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets`).then(response => {
-      setData(response.data.statuses);
+  function getImage() {// alert("Clicked Tesla Page");
+  }
+
+  function handleClick() {
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/nba`).then(response => {
+      setList(response.data.statuses);
     }).catch(error => {
       console.log(error);
-    }); // search
+    });
+  }
 
-    function handleInput() {
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/search`).then(response => {
-        setData(response.data.statuses);
-      }).catch(error => {
-        console.log(error);
-      });
-    }
+  function handleClickNasa() {
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/nasa`).then(response => {
+      setList(response.data.statuses);
+    }).catch(error => {
+      console.log(error);
+    });
   }
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["Fragment"], {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
-      className: "listBox",
-      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("span", {
-        className: "search_box0",
-        onClick: handleInput,
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("input", {
-          onChange: event => setSearchValue(event.target.value),
-          className: "search-tweet",
-          type: "text",
-          placeholder: "Search Twitter..."
+      className: "topList",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+        src: "./image/nba.png"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 9
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+        onClick: handleClickNasa,
+        src: "./image/nasa.png"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 9
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("button", {
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+          onClick: handleClick,
+          src: "./image/tesla.png"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 41,
@@ -340,48 +347,60 @@ const HomePage = () => {
         fileName: _jsxFileName,
         lineNumber: 40,
         columnNumber: 9
-      }, undefined)
-    }, void 0, false, {
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+        src: "./image/mkbhd.png"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 9
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+        src: "./image/ryan.png"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 9
+      }, undefined)]
+    }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 37,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
         className: "tweetFrame",
-        children: data.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+        children: list.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
           className: "tweetBox",
           children: person.text
         }, person.id, false, {
           fileName: _jsxFileName,
-          lineNumber: 52,
+          lineNumber: 49,
           columnNumber: 13
         }, undefined))
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 50,
+        lineNumber: 47,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 46,
       columnNumber: 7
     }, undefined)]
   }, void 0, true);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+/* harmony default export */ __webpack_exports__["default"] = (Favorite);
 
 /***/ }),
 
-/***/ "./src/TopPick/TopPick.css":
-/*!*********************************!*\
-  !*** ./src/TopPick/TopPick.css ***!
-  \*********************************/
+/***/ "./src/Search/Search.css":
+/*!*******************************!*\
+  !*** ./src/Search/Search.css ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./TopPick.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/TopPick/TopPick.css");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./Search.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Search/Search.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -402,10 +421,10 @@ module.exports = content.locals || {};
 
 /***/ }),
 
-/***/ "./src/TopPick/TopPick.js":
-/*!********************************!*\
-  !*** ./src/TopPick/TopPick.js ***!
-  \********************************/
+/***/ "./src/Search/Search.js":
+/*!******************************!*\
+  !*** ./src/Search/Search.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -413,24 +432,30 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _TopPick_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TopPick.css */ "./src/TopPick/TopPick.css");
-/* harmony import */ var _TopPick_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_TopPick_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/TopPick/TopPick.js";
+/* harmony import */ var _Search_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search.css */ "./src/Search/Search.css");
+/* harmony import */ var _Search_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Search_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/Search/Search.js";
 
- // import nba from "../nba.png";
 
 
 
-const TopPick = () => {
-  // const [image, setImage] = useImage([]);
-  // useEffect(() => {
-  //   getImage();
+
+
+
+const Search = () => {
+  // const { onSearch } = props;
+  const [data, setData] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  const [searchText, setSearchText] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""); // useEffect(() => {
+  //   // getTweets();
+  //   // handleInput();
   // }, []);
-  // function getImage() {
+  // function getTweets() {
   //   axios
-  //     .get("https://api.twitter.com/1.1/search/tweets.json?q=tesla")
+  //     .get(`https://api.twitter.com/1.1/search/tweets.json?q=tesla`)
   //     .then((response) => {
   //       setData(response.data.statuses);
   //     })
@@ -438,47 +463,75 @@ const TopPick = () => {
   //       console.log(error);
   //     });
   // }
-  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
-    className: "topList",
-    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
-      src: "./image/nba.png"
-    }, void 0, false, {
+
+  function handleInput(e) {
+    const searchText = e.target.value;
+    setSearchText(searchText);
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/search?text=${searchText}`).then(response => {
+      setData(response.data.statuses);
+    }).catch(error => {
+      console.log(error);
+    });
+  }
+
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["Fragment"], {
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+      className: "listBox",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("span", {
+        className: "search_box0",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("input", {
+          onChange: handleInput,
+          value: searchText,
+          className: "search-tweet",
+          type: "text",
+          placeholder: "Search Twitter..."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 11
+        }, undefined)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 9
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("button", {
+        type: "submit",
+        onClick: handleInput,
+        children: "Search"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 54,
+        columnNumber: 9
+      }, undefined)]
+    }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 44,
       columnNumber: 7
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
-      src: "./image/nasa.png"
+    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
+        className: "tweetFrame",
+        children: data.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+          className: "tweetBox",
+          children: person.text
+        }, person.id, false, {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 13
+        }, undefined))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 9
+      }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 7
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
-      src: "./image/tesla.png"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 7
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
-      src: "./image/mkbhd.png"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 7
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("img", {
-      src: "./image/ryan.png"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 58,
       columnNumber: 7
     }, undefined)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 24,
-    columnNumber: 5
-  }, undefined);
+  }, void 0, true);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (TopPick);
+/* harmony default export */ __webpack_exports__["default"] = (Search);
 
 /***/ }),
 

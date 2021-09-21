@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./App.css";
 import Welcome from "./Welcome/Welcome";
-import HomePage from "./HomePage/HomePage";
-import TopPick from "./TopPick/TopPick";
+import Search from "./Search/Search";
+import Favorite from "./Favorite/Favorite";
 
 function App() {
   return (
@@ -16,17 +16,17 @@ function App() {
         <Link to="/" className="search home">
           Home
         </Link>
-        <Link to="/HomePage" className="search">
+        <Link to="/Search" className="search">
           Search
         </Link>
-        <Link to="/TopPick" className="search">
+        <Link to="/Favorite" className="search">
           Favorites
         </Link>
       </div>
       <Switch>
         <Route exact path="/" component={Welcome} />
-        <Route exact path="/HomePage" component={HomePage} />
-        <Route exact path="/TopPick" component={TopPick} />
+        <Route exact path="/Search" component={Search} />
+        <Route exact path="/Favorite" component={Favorite} />
       </Switch>
     </Router>
   );
