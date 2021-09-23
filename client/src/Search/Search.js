@@ -9,28 +9,10 @@ const Search = () => {
   const [data, setData] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-  // useEffect(() => {
-  //   // getTweets();
-  //   // handleInput();
-  // }, []);
-
-  // function getTweets() {
-  //   axios
-  //     .get(`https://api.twitter.com/1.1/search/tweets.json?q=tesla`)
-  //     .then((response) => {
-  //       setData(response.data.statuses);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
-
-  function handleInput(e) {
-    const searchText = e.target.value;
-    setSearchText(searchText);
-
+  function handleFormSubmit(e) {
+    e.preventDefault();
     axios
-      .post(`/search?text=${searchText}`)
+      .get(`/search?text=${searchText}`)
       .then((response) => {
         setData(response.data.statuses);
       })
@@ -39,22 +21,24 @@ const Search = () => {
       });
   }
 
+  // function handleInput(e) {
+  //   const searchText = e.target.value;
+  //   setSearchText(searchText);
+  // }
   return (
     <>
-      <div className="listBox">
+      <form className="listBox" onSubmit={handleFormSubmit}>
         <span className="search_box0">
           <input
-            onChange={handleInput}
+            onChange={(e) => setSearchText(e.target.value)}
             value={searchText}
             className="search-tweet"
             type="text"
             placeholder="Search Twitter..."
           />
         </span>
-        <button type="submit" onClick={handleInput}>
-          Search
-        </button>
-      </div>
+        <button type="submit">Search</button>
+      </form>
       <div>
         <ul className="tweetFrame">
           {data.map((person) => (

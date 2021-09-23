@@ -150,7 +150,7 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Welcome_Welcome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Welcome/Welcome */ "./src/Welcome/Welcome.js");
@@ -299,12 +299,9 @@ var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/Favorite/Favo
 const Favorite = () => {
   const [list, setList] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
 
-  function getImage() {// alert("Clicked Tesla Page");
-  }
-
   function handleClick() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/nba`).then(response => {
-      setList(response.data.statuses);
+      setList(response.data.statuses.extended_entities);
     }).catch(error => {
       console.log(error);
     });
@@ -325,14 +322,14 @@ const Favorite = () => {
         src: "./image/nba.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 34,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
         onClick: handleClickNasa,
         src: "./image/nasa.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 39,
+        lineNumber: 35,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("button", {
         children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
@@ -340,49 +337,61 @@ const Favorite = () => {
           src: "./image/tesla.png"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 37,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 36,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
         src: "./image/mkbhd.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 39,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
         src: "./image/ryan.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 40,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 33,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
         className: "tweetFrame",
-        children: list.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+        children: list.map(person => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
           className: "tweetBox",
-          children: person.text
-        }, person.id, false, {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+            children: person.full_text
+          }, person.id, false, {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 15
+          }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+            children: person.media.extended_entities.media.media_url
+          }, person.id, false, {
+            fileName: _jsxFileName,
+            lineNumber: 47,
+            columnNumber: 15
+          }, undefined)]
+        }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 45,
           columnNumber: 13
         }, undefined))
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 43,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 42,
       columnNumber: 7
     }, undefined)]
   }, void 0, true);
@@ -449,63 +458,53 @@ var _jsxFileName = "/Users/yafetsegid/Desktop/Twitter_2/client/src/Search/Search
 const Search = () => {
   // const { onSearch } = props;
   const [data, setData] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-  const [searchText, setSearchText] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""); // useEffect(() => {
-  //   // getTweets();
-  //   // handleInput();
-  // }, []);
-  // function getTweets() {
-  //   axios
-  //     .get(`https://api.twitter.com/1.1/search/tweets.json?q=tesla`)
-  //     .then((response) => {
-  //       setData(response.data.statuses);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
+  const [searchText, setSearchText] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
 
-  function handleInput(e) {
-    const searchText = e.target.value;
-    setSearchText(searchText);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/search?text=${searchText}`).then(response => {
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/search?text=${searchText}`).then(response => {
       setData(response.data.statuses);
     }).catch(error => {
       console.log(error);
     });
-  }
+  } // function handleInput(e) {
+  //   const searchText = e.target.value;
+  //   setSearchText(searchText);
+  // }
+
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["Fragment"], {
-    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("form", {
       className: "listBox",
+      onSubmit: handleFormSubmit,
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("span", {
         className: "search_box0",
         children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("input", {
-          onChange: handleInput,
+          onChange: e => setSearchText(e.target.value),
           value: searchText,
           className: "search-tweet",
           type: "text",
           placeholder: "Search Twitter..."
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 32,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 31,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("button", {
         type: "submit",
-        onClick: handleInput,
         children: "Search"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 40,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 30,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
@@ -515,17 +514,17 @@ const Search = () => {
           children: person.text
         }, person.id, false, {
           fileName: _jsxFileName,
-          lineNumber: 61,
+          lineNumber: 45,
           columnNumber: 13
         }, undefined))
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 59,
+        lineNumber: 43,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 42,
       columnNumber: 7
     }, undefined)]
   }, void 0, true);

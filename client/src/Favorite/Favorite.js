@@ -6,15 +6,11 @@ import { useState, useEffect } from "react";
 const Favorite = () => {
   const [list, setList] = useState([]);
 
-  function getImage() {
-    // alert("Clicked Tesla Page");
-  }
-
   function handleClick() {
     axios
       .get(`/favorite/nba`)
       .then((response) => {
-        setList(response.data.statuses);
+        setList(response.data.statuses.extended_entities);
       })
       .catch((error) => {
         console.log(error);
@@ -46,9 +42,12 @@ const Favorite = () => {
       <div>
         <ul className="tweetFrame">
           {list.map((person) => (
-            <li className="tweetBox" key={person.id}>
-              {person.text}
-            </li>
+            <ul className="tweetBox">
+              <li key={person.id}>{person.full_text}</li>
+              <li key={person.id}>
+                {person.media.extended_entities.media.media_url}
+              </li>
+            </ul>
           ))}
         </ul>
       </div>
