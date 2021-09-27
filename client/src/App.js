@@ -20,7 +20,7 @@ function App() {
         <Link to="/Favorite" className="search">
           Favorites
         </Link>
-        {/* </div> */}
+        
       </div>
       <Switch>
         <Route exact path="/" component={Welcome} />
