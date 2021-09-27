@@ -10,10 +10,7 @@ function App() {
   return (
     <Router>
       <div className="header">
-        {/* <div className="listHeader"> */}
-        <Link>
-          <img to="/" className="logo" src={"./image/twitter-icon.png"} />
-        </Link>
+        <img to="/" className="logo" src={"./image/twitter-icon.png"} />
         <Link to="/" className="search home">
           Home
         </Link>

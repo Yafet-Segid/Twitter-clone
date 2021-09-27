@@ -12,18 +12,21 @@ const Favorite = () => {
     axios
       .get(`/favorite/espn`)
       .then((response) => {
-        setList(response.data.statuses);
+        setList(response.data);
+        // setList(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }
 
+  console.log(list);
+
   function handleClickNasa() {
     axios
       .get(`/favorite/nasa`)
       .then((response) => {
-        setList(response.data.statuses);
+        setList(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -34,7 +37,7 @@ const Favorite = () => {
     axios
       .get(`/favorite/tesla`)
       .then((response) => {
-        setList(response.data.statuses);
+        setList(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -45,7 +48,7 @@ const Favorite = () => {
     axios
       .get(`/favorite/mkbhd`)
       .then((response) => {
-        setList(response.data.statuses);
+        setList(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -56,7 +59,7 @@ const Favorite = () => {
     axios
       .get(`/favorite/Ryan`)
       .then((response) => {
-        setList(response.data.statuses);
+        setList(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -95,7 +98,7 @@ const Favorite = () => {
       <div>
         <ul className="tweetFrame">
           {list.map((person) => (
-            <ul className="tweetBox">
+            <ul className="tweetBox" key={person}>
               <li className="profileImage">
                 {person.user.profile_image_url && (
                   <img src={person.user.profile_image_url} />

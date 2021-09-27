@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".header {\n  margin: auto;\n  margin-top: 25px;\n  margin-bottom: 15px;\n  display: flex;\n  max-width: 460px;\n  list-style-type: none;\n}\n\n.search {\n  font-size: 30px;\n  padding-left: 40px;\n  text-decoration: none;\n}\n.search:hover {\n}\n\n.logo {\n  margin-left: 30px;\n  width: 60px;\n  height: 60px;\n}\n\n@media screen and (max-width: 630px) {\n  .header {\n    margin-right: 30px;\n  }\n  .search {\n    font-size: 5vw;\n  }\n\n  .logo {\n    width: 8vw;\n    height: 8vw;\n    margin-right: -15px;\n  }\n}\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EACb,gBAAgB;EAChB,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,qBAAqB;AACvB;AACA;AACA;;AAEA;EACE,iBAAiB;EACjB,WAAW;EACX,YAAY;AACd;;AAEA;EACE;IACE,kBAAkB;EACpB;EACA;IACE,cAAc;EAChB;;EAEA;IACE,UAAU;IACV,WAAW;IACX,mBAAmB;EACrB;AACF","sourcesContent":[".header {\n  margin: auto;\n  margin-top: 25px;\n  margin-bottom: 15px;\n  display: flex;\n  max-width: 460px;\n  list-style-type: none;\n}\n\n.search {\n  font-size: 30px;\n  padding-left: 40px;\n  text-decoration: none;\n}\n.search:hover {\n}\n\n.logo {\n  margin-left: 30px;\n  width: 60px;\n  height: 60px;\n}\n\n@media screen and (max-width: 630px) {\n  .header {\n    margin-right: 30px;\n  }\n  .search {\n    font-size: 5vw;\n  }\n\n  .logo {\n    width: 8vw;\n    height: 8vw;\n    margin-right: -15px;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".header {\n  margin: auto;\n  margin-top: 25px;\n  margin-bottom: 15px;\n  display: flex;\n  max-width: 460px;\n  list-style-type: none;\n}\n\n.search {\n  font-size: 30px;\n  padding-left: 40px;\n  text-decoration: none;\n}\n.search:hover {\n}\n\n.logo {\n  margin-top: 1px;\n  margin-left: 35px;\n  width: 60px;\n  height: 60px;\n}\n\n@media screen and (max-width: 630px) {\n  .header {\n    margin-right: 30px;\n  }\n  .search {\n    font-size: 5vw;\n  }\n\n  .logo {\n    width: 8vw;\n    height: 8vw;\n    margin-right: -15px;\n  }\n}\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EACb,gBAAgB;EAChB,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,qBAAqB;AACvB;AACA;AACA;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,WAAW;EACX,YAAY;AACd;;AAEA;EACE;IACE,kBAAkB;EACpB;EACA;IACE,cAAc;EAChB;;EAEA;IACE,UAAU;IACV,WAAW;IACX,mBAAmB;EACrB;AACF","sourcesContent":[".header {\n  margin: auto;\n  margin-top: 25px;\n  margin-bottom: 15px;\n  display: flex;\n  max-width: 460px;\n  list-style-type: none;\n}\n\n.search {\n  font-size: 30px;\n  padding-left: 40px;\n  text-decoration: none;\n}\n.search:hover {\n}\n\n.logo {\n  margin-top: 1px;\n  margin-left: 35px;\n  width: 60px;\n  height: 60px;\n}\n\n@media screen and (max-width: 630px) {\n  .header {\n    margin-right: 30px;\n  }\n  .search {\n    font-size: 5vw;\n  }\n\n  .logo {\n    width: 8vw;\n    height: 8vw;\n    margin-right: -15px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -171,19 +171,13 @@ function App() {
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])("div", {
       className: "header",
-      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])("img", {
-          to: "/",
-          className: "logo",
-          src: "./image/twitter-icon.png"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 15,
-          columnNumber: 11
-        }, this)
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])("img", {
+        to: "/",
+        className: "logo",
+        src: "./image/twitter-icon.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 13,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/",
@@ -191,7 +185,7 @@ function App() {
         children: "Home"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 14,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/Search",
@@ -199,7 +193,7 @@ function App() {
         children: "Search"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 17,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/Favorite",
@@ -207,7 +201,7 @@ function App() {
         children: "Favorites"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 20,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
@@ -221,7 +215,7 @@ function App() {
         component: _Welcome_Welcome__WEBPACK_IMPORTED_MODULE_3__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 26,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
@@ -229,7 +223,7 @@ function App() {
         component: _Search_Search__WEBPACK_IMPORTED_MODULE_4__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 27,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
@@ -237,12 +231,12 @@ function App() {
         component: _Favorite_Favorite__WEBPACK_IMPORTED_MODULE_5__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 28,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 25,
       columnNumber: 7
     }, this)]
   }, void 0, true, {
@@ -319,15 +313,17 @@ const Favorite = () => {
 
   function handleClickEspn() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/espn`).then(response => {
-      setList(response.data.statuses);
+      setList(response.data); // setList(response.data);
     }).catch(error => {
       console.log(error);
     });
   }
 
+  console.log(list);
+
   function handleClickNasa() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/nasa`).then(response => {
-      setList(response.data.statuses);
+      setList(response.data);
     }).catch(error => {
       console.log(error);
     });
@@ -335,7 +331,7 @@ const Favorite = () => {
 
   function handleClick() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/tesla`).then(response => {
-      setList(response.data.statuses);
+      setList(response.data);
     }).catch(error => {
       console.log(error);
     });
@@ -343,7 +339,7 @@ const Favorite = () => {
 
   function handleClickMkbhd() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/mkbhd`).then(response => {
-      setList(response.data.statuses);
+      setList(response.data);
     }).catch(error => {
       console.log(error);
     });
@@ -351,7 +347,7 @@ const Favorite = () => {
 
   function handleClickryan() {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/favorite/Ryan`).then(response => {
-      setList(response.data.statuses);
+      setList(response.data);
     }).catch(error => {
       console.log(error);
     });
@@ -366,7 +362,7 @@ const Favorite = () => {
         src: "./image/espn.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 69,
+        lineNumber: 72,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("img", {
         onClick: handleClickNasa,
@@ -374,7 +370,7 @@ const Favorite = () => {
         src: "./image/nasa.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 74,
+        lineNumber: 77,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("img", {
         onClick: handleClick,
@@ -382,7 +378,7 @@ const Favorite = () => {
         src: "./image/tesla.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 82,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("img", {
         onClick: handleClickMkbhd,
@@ -390,7 +386,7 @@ const Favorite = () => {
         src: "./image/mkbhd.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 87,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("img", {
         onClick: handleClickryan,
@@ -398,12 +394,12 @@ const Favorite = () => {
         src: "./image/ryan.png"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 89,
+        lineNumber: 92,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 71,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("div", {
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("ul", {
@@ -419,12 +415,12 @@ const Favorite = () => {
                 src: person.user.profile_image_url
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 101,
+                lineNumber: 104,
                 columnNumber: 19
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 99,
+              lineNumber: 102,
               columnNumber: 15
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("li", {
               className: "tweet",
@@ -433,14 +429,14 @@ const Favorite = () => {
                 children: person.full_text
               }, person.id, false, {
                 fileName: _jsxFileName,
-                lineNumber: 105,
+                lineNumber: 108,
                 columnNumber: 17
               }, undefined), ((_person$extended_enti = person.extended_entities) === null || _person$extended_enti === void 0 ? void 0 : (_person$extended_enti2 = _person$extended_enti.media[0]) === null || _person$extended_enti2 === void 0 ? void 0 : _person$extended_enti2.media_url) && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("img", {
                 className: "tweetImage",
                 src: (_person$extended_enti3 = person.extended_entities) === null || _person$extended_enti3 === void 0 ? void 0 : (_person$extended_enti4 = _person$extended_enti3.media[0]) === null || _person$extended_enti4 === void 0 ? void 0 : _person$extended_enti4.media_url
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 109,
+                lineNumber: 112,
                 columnNumber: 19
               }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("ul", {
                 className: "tweetIcon",
@@ -448,54 +444,54 @@ const Favorite = () => {
                   size: "18px"
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 115,
+                  lineNumber: 118,
                   columnNumber: 19
                 }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("li", {
                   className: "likeIcon",
                   children: person.retweet_count
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 116,
+                  lineNumber: 119,
                   columnNumber: 19
                 }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_icons_ai__WEBPACK_IMPORTED_MODULE_4__["AiOutlineRetweet"], {
                   className: "retweetIconLogo",
                   size: "18px"
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 117,
+                  lineNumber: 120,
                   columnNumber: 19
                 }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])("li", {
                   className: "retweetIcon",
                   children: person.favorite_count
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 118,
+                  lineNumber: 121,
                   columnNumber: 19
                 }, undefined)]
               }, void 0, true, {
                 fileName: _jsxFileName,
-                lineNumber: 114,
+                lineNumber: 117,
                 columnNumber: 17
               }, undefined)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 104,
+              lineNumber: 107,
               columnNumber: 15
             }, undefined)]
-          }, void 0, true, {
+          }, person, true, {
             fileName: _jsxFileName,
-            lineNumber: 98,
+            lineNumber: 101,
             columnNumber: 13
           }, undefined);
         })
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 96,
+        lineNumber: 99,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 98,
       columnNumber: 7
     }, undefined)]
   }, void 0, true);
@@ -573,7 +569,7 @@ const Search = () => {
   function handleFormSubmit(e) {
     e.preventDefault();
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/search?text=${searchText}`).then(response => {
-      setData(response.data.statuses);
+      setData(response.data);
     }).catch(error => {
       console.log(error);
     });

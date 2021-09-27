@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "client", "build")));
 app.get("/search", (req, res) => {
   axios
     .get(
-      `https://api.twitter.com/1.1/search/tweets.json?tweet_mode=extended&q=${req.query.text}`,
+      `https://api.twitter.com/1.1/statuses/user_timeline.json?tweet_mode=extended&screen_name=${req.query.text}`,
       {
         headers: {
           Authorization: ` Bearer ${token}`,
@@ -31,7 +31,7 @@ app.get("/search", (req, res) => {
 app.get("/favorite/espn", async (req, res) => {
   await axios
     .get(
-      `https://api.twitter.com/1.1/search/tweets.json?tweet_mode=extended&q=espn`,
+      `https://api.twitter.com/1.1/statuses/user_timeline.json?tweet_mode=extended&screen_name=espn`,
       {
         headers: {
           Authorization: ` Bearer ${token}`,
@@ -48,7 +48,7 @@ app.get("/favorite/espn", async (req, res) => {
 app.get("/favorite/nasa", async (req, res) => {
   await axios
     .get(
-      `https://api.twitter.com/1.1/search/tweets.json?tweet_mode=extended&q=nasa`,
+      `https://api.twitter.com/1.1/statuses/user_timeline.json?tweet_mode=extended&screen_name=nasa`,
       {
         headers: {
           Authorization: ` Bearer ${token}`,
@@ -65,7 +65,7 @@ app.get("/favorite/nasa", async (req, res) => {
 app.get("/favorite/tesla", async (req, res) => {
   await axios
     .get(
-      `https://api.twitter.com/1.1/search/tweets.json?tweet_mode=extended&q=tesla`,
+      `https://api.twitter.com/1.1/statuses/user_timeline.json?tweet_mode=extended&screen_name=tesla`,
       {
         headers: {
           Authorization: ` Bearer ${token}`,
@@ -82,7 +82,7 @@ app.get("/favorite/tesla", async (req, res) => {
 app.get("/favorite/mkbhd", async (req, res) => {
   await axios
     .get(
-      `https://api.twitter.com/1.1/search/tweets.json?tweet_mode=extended&q=mkbhd`,
+      `https://api.twitter.com/1.1/statuses/user_timeline.json?tweet_mode=extended&screen_name=mkbhd`,
       {
         headers: {
           Authorization: ` Bearer ${token}`,
@@ -99,7 +99,7 @@ app.get("/favorite/mkbhd", async (req, res) => {
 app.get("/favorite/Ryan", async (req, res) => {
   await axios
     .get(
-      `https://api.twitter.com/1.1/search/tweets.json?tweet_mode=extended&q=VancityReynolds`,
+      `https://api.twitter.com/1.1/statuses/user_timeline.json?tweet_mode=extended&screen_name=VancityReynolds`,
       {
         headers: {
           Authorization: ` Bearer ${token}`,

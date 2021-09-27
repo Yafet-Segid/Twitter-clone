@@ -17,7 +17,7 @@ const Search = () => {
     axios
       .get(`/search?text=${searchText}`)
       .then((response) => {
-        setData(response.data.statuses);
+        setData(response.data);
       })
       .catch((error) => {
         console.log(error);
