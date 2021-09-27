@@ -8,7 +8,8 @@ const Welcome = () => {
         <h1 className="Header_text">
           What
           <br /> Happening
-          <br /> Right <br />
+          <br /> Right
+          <br />
           now
         </h1>
       </div>

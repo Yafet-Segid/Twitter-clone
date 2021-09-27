@@ -766,10 +766,10 @@ const Welcome = () => {
           fileName: _jsxFileName,
           lineNumber: 11,
           columnNumber: 11
-        }, undefined), " Right ", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("br", {}, void 0, false, {
+        }, undefined), " Right", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("br", {}, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 11,
-          columnNumber: 24
+          lineNumber: 12,
+          columnNumber: 11
         }, undefined), "now"]
       }, void 0, true, {
         fileName: _jsxFileName,
@@ -785,7 +785,7 @@ const Welcome = () => {
       src: "./image/twitter-icon.png"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 7
     }, undefined)]
   }, void 0, true, {

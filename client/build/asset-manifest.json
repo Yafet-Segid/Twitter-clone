@@ -7,8 +7,7 @@
     "runtime-main.js": "/js/bundle.js",
     "runtime-main.js.map": "/js/bundle.js.map",
     "vendors~main.js": "/js/vendors~main.chunk.js",
-    "vendors~main.js.map": "/js/vendors~main.chunk.js.map",
-    "index.html": "/index.html"
+    "vendors~main.js.map": "/js/vendors~main.chunk.js.map"
   },
   "entrypoints": [
     "js/bundle.js",
