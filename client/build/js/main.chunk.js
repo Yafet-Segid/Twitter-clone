@@ -172,7 +172,6 @@ function App() {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])("div", {
       className: "header",
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])("img", {
-        to: "/",
         className: "logo",
         src: "./image/twitter-icon.png"
       }, void 0, false, {
@@ -180,7 +179,7 @@ function App() {
         lineNumber: 13,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
+        to: "/home",
         className: "search home",
         children: "Home"
       }, void 0, false, {
@@ -211,11 +210,11 @@ function App() {
     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], {
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
-        path: "/",
+        path: "/home",
         component: _Welcome_Welcome__WEBPACK_IMPORTED_MODULE_3__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 25,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
@@ -223,7 +222,7 @@ function App() {
         component: _Search_Search__WEBPACK_IMPORTED_MODULE_4__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 26,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
@@ -231,12 +230,12 @@ function App() {
         component: _Favorite_Favorite__WEBPACK_IMPORTED_MODULE_5__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 27,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 7
     }, this)]
   }, void 0, true, {

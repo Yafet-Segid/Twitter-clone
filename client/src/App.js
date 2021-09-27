@@ -10,8 +10,8 @@ function App() {
   return (
     <Router>
       <div className="header">
-        <img to="/" className="logo" src={"./image/twitter-icon.png"} />
-        <Link to="/" className="search home">
+        <img className="logo" src={"./image/twitter-icon.png"} />
+        <Link to="/home" className="search home">
           Home
         </Link>
         <Link to="/Search" className="search">
@@ -20,10 +20,9 @@ function App() {
         <Link to="/Favorite" className="search">
           Favorites
         </Link>
-        
       </div>
       <Switch>
-        <Route exact path="/" component={Welcome} />
+        <Route exact path="/home" component={Welcome} />
         <Route exact path="/Search" component={Search} />
         <Route exact path="/Favorite" component={Favorite} />
       </Switch>
