@@ -6,17 +6,36 @@
 }
 
 .big_bird {
-  width: 35em;
+  max-width: 460px;
+  list-style-type: none;
   height: 35em;
-  margin-left: 100px;
-  margin-top: 200px;
+  margin-left: 300px;
+  margin-top: 170px;
   float: right;
-  
 }
 
 .Header_text {
-  margin-left: 70px;
+  margin-left: 100px;
   margin-top: 150px;
   color: black;
   font-size: 50px;
+}
+
+@media screen and (max-width: 1198px) {
+  .big_bird {
+    width: 40vw;
+    height: 40vw;
+  }
+  .Header_text {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .Header_text {
+    margin-left: 6vw;
+  }
+  .big_bird {
+    margin-left: 13vw;
+  }
 }

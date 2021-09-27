@@ -10,9 +10,10 @@ function App() {
   return (
     <Router>
       <div className="header">
-        {/* <Link>http://localhost:300
+        {/* <div className="listHeader"> */}
+        <Link>
           <img to="/" className="logo" src={"./image/twitter-icon.png"} />
-        </Link> */}
+        </Link>
         <Link to="/" className="search home">
           Home
         </Link>
@@ -22,6 +23,7 @@ function App() {
         <Link to="/Favorite" className="search">
           Favorites
         </Link>
+        {/* </div> */}
       </div>
       <Switch>
         <Route exact path="/" component={Welcome} />

@@ -9,21 +9,41 @@ body {
   font-size: 20px;
   padding: 7px;
   padding-left: 20px;
-  margin-left: 350px;
   margin-top: 30px;
-  /* outline: none; */
   color: black;
 }
-.tweetFrame {
+.search_box {
   list-style-type: none;
-  margin-top: 50px;
+  margin-left: 43%;
+}
+.btn {
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 23px;
+  padding: 8px;
+  color: white;
+  background-color: #74caff;
 }
 
-.tweetBox {
-  margin-bottom: 20px;
-  border: 1px solid black;
-  margin-left: 300px;
-  margin-right: 300px;
-  border-radius: 30px;
-  padding: 15px;
+@media screen and (max-width: 620px) {
+  .search-tweet {
+    border: 1px solid #1da1f2;
+    border-radius: 20px;
+    font-size: 3vw;
+    padding: 1.5vw;
+    padding-left: 2vw;
+    margin-top: 3vw;
+  }
+  .btn {
+    margin: 1vw;
+    border-radius: 50%;
+    font-size: 3vw;
+    padding: 2vw;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .search_box {
+    margin-left: 100px;
+  }
 }

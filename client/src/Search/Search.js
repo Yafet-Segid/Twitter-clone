@@ -2,6 +2,9 @@ import React from "react";
 import "./Search.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { MdFavoriteBorder } from "react-icons/md";
+import { AiOutlineRetweet } from "react-icons/ai";
+import { FiSearch } from "react-icons/fi";
 
 const Search = () => {
   // const { onSearch } = props;
@@ -28,7 +31,7 @@ const Search = () => {
   return (
     <>
       <form className="listBox" onSubmit={handleFormSubmit}>
-        <span className="search_box0">
+        <span className="search_box">
           <input
             onChange={(e) => setSearchText(e.target.value)}
             value={searchText}
@@ -36,15 +39,35 @@ const Search = () => {
             type="text"
             placeholder="Search Twitter..."
           />
+          <button className="btn" type="submit">
+            <FiSearch />
+          </button>
         </span>
-        <button type="submit">Search</button>
       </form>
       <div>
         <ul className="tweetFrame">
           {data.map((person) => (
-            <li className="tweetBox" key={person.id}>
-              {person.text}
-            </li>
+            <ul className="tweetBox">
+              <li className="profileImage">
+                {person.user.profile_image_url && (
+                  <img src={person.user.profile_image_url} />
+                )}
+              </li>
+
+              <li key={person.id}>{person.full_text}</li>
+              {person.extended_entities?.media[0]?.media_url && (
+                <img
+                  className="tweetImage"
+                  src={person.extended_entities?.media[0]?.media_url}
+                />
+              )}
+              <ul className="tweetIcon">
+                <MdFavoriteBorder size="18px" />
+                <li className="likeIcon">{person.retweet_count}</li>
+                <AiOutlineRetweet size="18px" />
+                <li className="retweetIcon">{person.favorite_count}</li>
+              </ul>
+            </ul>
           ))}
         </ul>
       </div>

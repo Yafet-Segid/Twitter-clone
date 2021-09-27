@@ -1,29 +1,37 @@
 .header {
-  /* margin-left: 570px; */
+  margin: auto;
   margin-top: 25px;
   margin-bottom: 15px;
   display: flex;
-
-}
-.home{
-  margin-left: 540px;
-
+  max-width: 460px;
+  list-style-type: none;
 }
 
 .search {
-  display: inline;
-  /* margin: 20px; */
   font-size: 30px;
-  padding-left:30px;
-  text-decoration: none;  
-  
+  padding-left: 40px;
+  text-decoration: none;
 }
 .search:hover {
 }
 
-.logo{
+.logo {
   margin-left: 30px;
   width: 60px;
   height: 60px;
-  
+}
+
+@media screen and (max-width: 630px) {
+  .header {
+    margin-right: 30px;
+  }
+  .search {
+    font-size: 5vw;
+  }
+
+  .logo {
+    width: 8vw;
+    height: 8vw;
+    margin-right: -15px;
+  }
 }

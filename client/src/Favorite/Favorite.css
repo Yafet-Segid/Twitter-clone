@@ -4,13 +4,99 @@ body {
 img {
   display: flex;
 }
+
+.tweetFrame {
+  margin-top: 70px;
+}
+
+.tweetBox {
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 35px #999;
+  border-radius: 30px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+  max-width: 460px;
+  list-style-type: none;
+}
+
 .topList {
+  display: flex;
+  justify-content: center;
   background-color: rgb(255, 254, 254);
   display: flex;
   margin-top: 40px;
-  margin-left: 4%;
+  border-radius: 40px;
+}
+.topList img {
+  margin: 5px;
 }
 
 .topList img:hover {
   box-shadow: 0 0 10px#1DA1F2;
+  border-radius: 50px;
+}
+
+.tweetImage {
+  padding-top: 15px;
+  width: 400px;
+  border-radius: 30px;
+}
+
+.likeIcon {
+  margin-right: 120px;
+  padding: 5px;
+  display: inline;
+  font-size: 18px;
+}
+
+.retweetIcon {
+  display: inline;
+}
+.tweetIcon {
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: 60px;
+}
+.profileImage img {
+  border-radius: 50px;
+}
+.tweet {
+  margin-left: 15px;
+}
+/* .tweetIconSize .likeIconSize {
+  width: 28px;
+  display: flex;
+} */
+
+@media screen and (max-width: 933px) {
+  .Resize {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .tweetBox {
+    width: 67vw;
+    margin-left: 5px;
+  }
+  .tweetImage {
+    width: 65vw;
+  }
+  .tweets {
+    margin: 6px;
+    font-size: 4vw;
+  }
+  .tweetIcon {
+    display: inline;
+  }
+  .likeIcon {
+    margin-right: 8px;
+  }
+  .retweetIconLogo {
+    margin-left: 40px;
+    margin-top: 12px;
+  }
 }
