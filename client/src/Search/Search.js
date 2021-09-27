@@ -24,10 +24,6 @@ const Search = () => {
       });
   }
 
-  // function handleInput(e) {
-  //   const searchText = e.target.value;
-  //   setSearchText(searchText);
-  // }
   return (
     <>
       <form className="listBox" onSubmit={handleFormSubmit}>
@@ -76,4 +72,3 @@ const Search = () => {
 };
 
 export default Search;
-//
