@@ -66,10 +66,6 @@ img {
 .tweet {
   margin-left: 15px;
 }
-/* .tweetIconSize .likeIconSize {
-  width: 28px;
-  display: flex;
-} */
 
 @media screen and (max-width: 933px) {
   .Resize {
@@ -98,5 +94,11 @@ img {
   .retweetIconLogo {
     margin-left: 40px;
     margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tweetIcon {
+    margin-left: 10px;
   }
 }
