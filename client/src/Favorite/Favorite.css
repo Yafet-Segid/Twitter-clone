@@ -66,6 +66,9 @@ img {
 .tweet {
   margin-left: 15px;
 }
+.Resize {
+  width: 100%;
+}
 
 @media screen and (max-width: 933px) {
   .Resize {
@@ -99,12 +102,8 @@ img {
     margin-top: 2px;
     margin-left: 10px;
   }
-  .topList {
-    margin-top: 15em;
+  /* .topList {
     margin-left: 15em;
     margin-right: 15em;
-  }
-  .Resize {
-    width: 50%;
-  }
+  } */
 }
