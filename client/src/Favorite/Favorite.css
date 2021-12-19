@@ -101,5 +101,10 @@ img {
   }
   .topList {
     margin-top: 15em;
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+  .Resize {
+    width: 50%;
   }
 }
