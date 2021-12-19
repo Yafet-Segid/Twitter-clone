@@ -102,8 +102,8 @@ img {
     margin-top: 2px;
     margin-left: 10px;
   }
-  /* .topList {
-    margin-left: 15em;
-    margin-right: 15em;
-  } */
+  .topList {
+    /* margin-left: 2em;
+    margin-right: 2em; */
+  }
 }
