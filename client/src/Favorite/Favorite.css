@@ -99,6 +99,7 @@ img {
 
 @media only screen and (max-width: 600px) {
   .tweetIcon {
+    margin-top: 2px;
     margin-left: 10px;
   }
 }

@@ -7,8 +7,6 @@ import { AiOutlineRetweet } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
 
 const Search = () => {
-  // const { onSearch } = props;
-
   const [data, setData] = useState([]);
   const [searchText, setSearchText] = useState("");
 
@@ -29,7 +27,9 @@ const Search = () => {
       <form className="listBox" onSubmit={handleFormSubmit}>
         <span className="search_box">
           <input
-            onChange={(e) => setSearchText(e.target.value)}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
             value={searchText}
             className="search-tweet"
             type="text"
