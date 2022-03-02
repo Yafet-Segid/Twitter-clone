@@ -15,7 +15,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
+    
   },
+  
   "scripts": {
     "start": "nodemon server.js",
     "client": "npm run watch --prefix client",
