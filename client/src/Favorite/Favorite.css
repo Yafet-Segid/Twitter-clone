@@ -67,7 +67,7 @@ img {
   margin-left: 15px;
 }
 .Resize {
-  width: 60%;
+  width: 12em;
 }
 
 @media screen and (max-width: 933px) {
@@ -103,7 +103,7 @@ img {
     margin-left: 10px;
   }
   .topList {
-    margin-left: 2em;
-    margin-right: 2em;
+    /* margin-left: 2em;
+    margin-right: 2em; */
   }
 }
