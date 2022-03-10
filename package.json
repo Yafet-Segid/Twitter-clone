@@ -16,12 +16,13 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "nodemon": "^2.0.12"
+    "concurrently": "^6.5.1"
   },
   "scripts": {
     "start": "nodemon server.js",
-    "client": "npm run watch --prefix client",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "client": "npm start watch --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run build --pr"
   },
   "author": "Yafet",
   "license": "MIT"
